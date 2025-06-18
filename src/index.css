@@ -138,7 +138,7 @@
   overflow: hidden;
   font-family: sans-serif;
   background: white;
-    max-height: 100%;
+   min-height: 200px;
 }
 
 .image-container {
