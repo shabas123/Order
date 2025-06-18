@@ -148,14 +148,14 @@ export default function Home() {
             <i className="bi bi-house-fill text-purple"></i><br />
             <FontAwesomeIcon icon={faHouse}  size="sm" style={{ color: "", fontSize:"28px"}} />          </div>
           <div className="text-center position-relative">
-            <li className="nav-item position-relative">
-              <a href="/cart" className="nav-link nav-hover me-2 position-relative" style={{ fontSize: "30px" }}>
+           <div className="nav-item position-relative">
+              <a href="/cart" className="nav-link nav-hover mt-4 me-2 position-relative" style={{ fontSize: "28px" }}>
                 <FontAwesomeIcon icon={faCartShopping} size="sm" /> {cartstate.cartItems.length > 0 && (
                   <span className="badge bg-success position-absolute top-0 start-100 translate-middle rounded-pill" style={{ fontSize: "16px" }}>
                     {cartstate.cartItems.length} </span>
                 )}
               </a>
-            </li>
+            </div>
           </div>
             <div className="text-center">
             <i className="bi bi-grid"></i><br />
