@@ -72,7 +72,7 @@ function Cart() {
 
                                             {/* Quantity and Price */}
                                             <div className="text-end">
-                                                <div className="d-flex  align-items-center border rounded-pill px-2 py-1 gap-2">
+                                                <div className="d-flex  align-items-center  rounded-pill px-2 py-1 gap-2">
                                                     <button className="btn p-1" onClick={() => dispatch(addToCart(item, item.quantity - 1, item.varient))}>
                                                         <FontAwesomeIcon icon={faMinus} className="text-danger" />
                                                     </button>
