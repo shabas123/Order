@@ -86,9 +86,7 @@ function Cart() {
                                             {/* Delete Button */}
                                             <div className="fw text-black  mt-1">₹{item.price}</div>
 
-                                            <button className="btn text-danger" onClick={() => dispatch(deleteFromCart(item))}>
-                                                <FontAwesomeIcon icon={faTrash} />
-                                            </button>
+                                       
 
                                         </div>
 
