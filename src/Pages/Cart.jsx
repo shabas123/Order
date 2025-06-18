@@ -97,7 +97,7 @@ function Cart() {
                             })
                         )}
                     </div>
-                <div class="d-flex justify-content-between align-items-center p-3 bg-white ">
+                <div class="d-flex justify-content-between order-summary align-items-center p-3 bg-white ">
                             <div>
                                 <div class="fs-4 fw-bold text-black">Total: ₹{subtotal} <i class="bi bi-info-circle"></i></div>
                             </div>
