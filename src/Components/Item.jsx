@@ -85,7 +85,7 @@ export default function Item({ item }) {
 
             <div className=''>
               <p className="name">Quantity</p>
-              <select className='form-control  w-75  shadow' style={{ border: "1px solid #ff0080" }} value={quantity} onChange={(e) => setquantity(e.target.value)}>
+              <select className='form-control ms-1 w-75  shadow' style={{ border: "1px solid #ff0080" }} value={quantity} onChange={(e) => setquantity(e.target.value)}>
                 {[...Array(10).keys()].map((x, i) => <option key={i} value={i + 1}>{i + 1}</option>)}
               </select>
             </div>
