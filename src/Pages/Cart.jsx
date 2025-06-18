@@ -99,7 +99,7 @@ function Cart() {
                     </div>
                 <div class="d-flex justify-content-between order-summary align-items-center p-3 bg-white ">
                             <div>
-                                <div class="fs-2 fw-bold text-black">Total: ₹{subtotal} <i class="bi bi-info-circle"></i></div>
+                                <div class="fs-5 fw-bold text-black">Total: ₹{subtotal} <i class="bi bi-info-circle"></i></div>
                             </div>
                             <button class="order-button w-50 mt-3" disabled={cartItems.length === 0} onClick={handlePlaceOrder}>Place Order  <Order subtotal={subtotal} /> </button>
                         </div>
