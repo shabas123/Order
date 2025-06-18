@@ -78,14 +78,14 @@ export default function Item({ item }) {
           <div className="flex-container">
             <div className='w-100'>
               <p className="name">Varients</p>
-              <select className='form-control w-75 shadow' style={{ border: "1px solid #ff0080" }} value={varient} onChange={(e) => setvarient(e.target.value)}>
+              <select className='form-control  shadow' style={{ border: "1px solid #ff0080" }} value={varient} onChange={(e) => setvarient(e.target.value)}>
                 {item.varients.map(v => <option key={v} value={v}>{v}</option>)}
               </select>
             </div>
 
             <div className=''>
               <p className="name">Quantity</p>
-              <select className='form-control ms-1 shadow' style={{ border: "1px solid #ff0080" }} value={quantity} onChange={(e) => setquantity(e.target.value)}>
+              <select className='form-control ms-1 w-75 shadow' style={{ border: "1px solid #ff0080" }} value={quantity} onChange={(e) => setquantity(e.target.value)}>
                 {[...Array(10).keys()].map((x, i) => <option key={i} value={i + 1}>{i + 1}</option>)}
               </select>
             </div>
