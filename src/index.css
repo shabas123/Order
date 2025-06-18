@@ -138,6 +138,7 @@
   overflow: hidden;
   font-family: sans-serif;
   background: white;
+    max-height: 100%;
 }
 
 .image-container {
