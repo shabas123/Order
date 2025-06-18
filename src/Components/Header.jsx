@@ -128,6 +128,10 @@ const AppNavbar = () => {
 
   return (
     <>
+      <CartModel isOpen={modalOpen} onClose={() => setModalOpen(false)}>
+
+                    <Cart />
+                  </CartModel>
       <nav className="navbar navbar-expand-lg bg-black shadow-sm px-4 mb-4 " >
         <div className="container-fluid">
           <a className="navbar-brand d-flex align-items-center gap-2 " href="/" style={{ fontSize: "30px", color: "white", fontFamily: "cursive", padding: "20px" }}>Chicako <span style={{ color: "yellow", fontFamily: "fantasy" }}>  Burg</span>
@@ -140,16 +144,11 @@ const AppNavbar = () => {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto align-items-center gap-3 mb-5">
               <li className="nav-item position-relative">
-                <a href="/cartmodal" className="nav-link nav-hover me-2 position-relative" style={{ color: "white", fontSize: "30px" }}>
-                  <CartModel isOpen={modalOpen} onClose={() => setModalOpen(false)}>
-
-                    <Cart />
-                  </CartModel>
-                  <FontAwesomeIcon icon={faCartShopping} style={{ color: "#f4f7fa", }} /> {cartstate.cartItems.length > 0 && (
+                 <button className="nav-link nav-hover me-2 position-relative" style={{ color: "white", fontSize: "px" }}></button>
+                  <FontAwesomeIcon onClick={()=>{setModalOpen(true)}}  icon={faCartShopping} style={{ color: "#f4f7fa", height:"30px"}} className="me-2" /> {cartstate.cartItems.length > 0 && (
                     <span className="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-success" style={{ fontSize: "18px" }}>
                       {cartstate.cartItems.length} </span>
                   )}
-                </a>
               </li>
 
 
@@ -236,3 +235,4 @@ const AppNavbar = () => {
 };
 
 export default AppNavbar;
+
