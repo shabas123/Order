@@ -1,4 +1,5 @@
 
+
 import React, { useEffect } from 'react'
 import Item from '../Components/Item'
 import { useSelector, useDispatch } from 'react-redux';
@@ -42,22 +43,11 @@ export default function Home() {
     }, 1000);
   };
   
-//   useEffect(() => {
-//   const isMobile = window.innerWidth < 768;
-//   if (isMobile && !loggedInUser) {
-//     const timer = setTimeout(() => {
-//       Navigate('/login');
-//     }, 3000);
 
-//     return () => clearTimeout(timer);
-//   }
-// }, [loggedInUser, Navigate]);
- 
- 
   return (
     <>
  
-      <div className="container-fluid d-flex align-items-center justify-content-center" >
+      <div className="container-fluid d-flex align-items-center justify-content-center " >
         <div className="row align-items-center" style={{ textAlign: "center" }}>
           <div className="col-md-6 " style={{ padding: "30px" }}>
             {loggedInUser ? <h2 className="fw-bold text-success " > Welcome {loggedInUser} </h2>
@@ -76,7 +66,6 @@ export default function Home() {
               src="https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExczh3aTNoNTd2OHVscXJyYTlsMHVsdmJlbXNta2ZnejlwdWNnd3hwdyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/5XLPWTWfj7h6M/giphy.gif"
               alt="Delicious Burger" className="img-fluid mt-5" />
               
-              {/* <Link to={"/login"} style={{ textDecoration: "none", fontFamily: "fantasy" }} > <img src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExcHV3YzR5Zm8ybWhuemNvbG5vcWNoejdvNHUweGc0MnkyY2w2aHlpMyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/NN2Cmofk4LYbWhtmOB/giphy.gif" alt="" className='img-fluid d-md-none' style={{ height:"800px"}} /></Link> */}
 
           
           </div>
@@ -131,7 +120,7 @@ export default function Home() {
          <div className="row justify-content-center"  >
           {
             items.map((item => {
-              return <div className="col-md-2 col-6 mt-4 " key={item._id} style={{ paddingLeft: "9px", paddingRight: "9pxx" }}>
+              return <div className="col-md-2 col-6 mt-4 mb-" key={item._id} >
                 <div>
                   <Item item={item} />
                 </div>
@@ -143,12 +132,12 @@ export default function Home() {
         
 
         {/* Bottom Navigation - Visible only on Mobile */}
-     <div className="d-flex d-md-none justify-content-around align-items-center fixed-bottom bg-black shadow" style={{borderRadius:"15px"}}>
+     <div className="d-flex d-md-none justify-content-around align-items-center  fixed-bottom bg-black shadow" style={{borderRadius:"15px"}}>
           <div className="text-center">
             <i className="bi bi-house-fill text-purple"></i><br />
             <FontAwesomeIcon icon={faHouse}  size="sm" style={{ color: "", fontSize:"28px"}} />          </div>
           <div className="text-center position-relative">
-           <div className="nav-item position-relative">
+            <div className="nav-item position-relative">
               <a href="/cart" className="nav-link nav-hover mt-4 me-2 position-relative" style={{ fontSize: "28px" }}>
                 <FontAwesomeIcon icon={faCartShopping} size="sm" /> {cartstate.cartItems.length > 0 && (
                   <span className="badge bg-success position-absolute top-0 start-100 translate-middle rounded-pill" style={{ fontSize: "16px" }}>
