@@ -64,7 +64,6 @@ export default function Register({ register }) {
           <div className="row mt-4">
             <div className="col-md-4"></div>
             <div className="col-md-6 border-white rounded  mt-4">
-              <h3 className='text-black text-center'>Register</h3>
 
             </div>
 
