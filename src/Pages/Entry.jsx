@@ -34,7 +34,7 @@ export default function Entry() {
     return (
         <div>
             {/* Only mobile will stay here for 4 seconds */}
-            <video src="https://cdn.pixabay.com/video/2025/02/18/259141_large.mp4" autoPlay  style={{height:"550px", width: "100%", objectFit: "cover",borderRadius:"500px" }}
+            <video src="https://cdn.pixabay.com/video/2025/02/18/259141_large.mp4" autoPlay  style={{height:"550px", width: "100%", objectFit: "cover",borderRadius:"10px" }}
 ></video>
           
         </div>
