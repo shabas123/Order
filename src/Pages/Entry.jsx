@@ -32,11 +32,10 @@ export default function Entry() {
     }, [loggedInUser, navigate]);
 
     return (
-        <div>
+      <div>
             {/* Only mobile will stay here for 4 seconds */}
-            <video src="https://cdn.pixabay.com/video/2025/02/18/259141_large.mp4" autoPlay  style={{height:"600px", width: "100%", objectFit: "cover",borderRadius:"300px" }}
+            <video src="https://media.istockphoto.com/id/2161798575/video/burger-falling-beef-bun-vegetables-slow-motion-depth-of-field.mp4?s=mp4-640x640-is&k=20&c=eheA3gwLHs7zuPBpry1doR8qHg8bUVgl5_v1Kg5TON4=" autoPlay  style={{height:"200px", width: "100%", objectFit: "cover",borderRadius:"20px", marginTop:"150px" }}
 ></video>
-          
-        </div>
+          </div>
     );
 }
