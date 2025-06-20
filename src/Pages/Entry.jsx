@@ -21,12 +21,12 @@ export default function Entry() {
             if (isMobile) {
                 // ✅ show animation then go to login
                 const timer = setTimeout(() => {
-                    navigate('/home');
+                    navigate('/');
                 }, 5000);
                 return () => clearTimeout(timer);
             } else {
                 // ✅ not mobile → go to home even if not logged in
-                navigate('/home');
+                navigate('/');
             }
         }
     }, [loggedInUser, navigate]);
