@@ -54,7 +54,7 @@ export default function Item({ item }) {
       <div className="product-card">
         <div className="image-container">
           <div className="position-relative">
-            <img className='card' src={item.image} alt={item.name} />
+            <img className='card' src={item.image} style={{minHeight:"100px"}} alt={item.name} />
             <div className="position-absolute top-0 end-0 bg-success text-white px-2 py-1 m-2 rounded-pill large">
               <i className="bi bi-star-fill me-1"></i>Popular
             </div>
