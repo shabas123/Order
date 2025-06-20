@@ -17,7 +17,7 @@ export default function Entry() {
         const isMobile = window.innerWidth < 768;
 
         if (loggedInUser) {
-            navigate('/home'); // ✅ already logged in → go to home for all devices
+            navigate('/'); // ✅ already logged in → go to home for all devices
         } else {
             if (isMobile) {
                 // ✅ show animation then go to login
