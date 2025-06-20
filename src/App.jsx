@@ -20,11 +20,11 @@ function App() {
       {!isEntryPage && <Header/>}
 
       <Routes>
-        <Route path="/" element={<Entry />} />
-        <Route path="/login" element={<Home />} />
+        <Route path="entry" element={<Entry />} />
+        <Route path="/" element={<Home />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/cartmodal" element={<Cart />} />
-        <Route path="/home" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/register" element={<Register />} />
         <Route path="/admin/*" element={<Adminscreen />} />
         <Route path="/order" element={<Order />} />
