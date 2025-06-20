@@ -5,7 +5,13 @@ export default function Entry() {
     const [loggedInUser, setLoggedInUser] = useState('');
     const navigate = useNavigate();
 
-  
+    useEffect(() => {
+        const user = sessionStorage.getItem("loggedInUser");
+        if (user) {
+            setLoggedInUser(user);
+        }
+    }, []);
+
 
     useEffect(() => {
         const isMobile = window.innerWidth < 768;
