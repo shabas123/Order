@@ -21,7 +21,7 @@ function App() {
   }, []);
 
  
-  const isEntryPage = location.pathname === "/";
+  const isEntryPage = location.pathname === "/entry";
 
   return (
     <>
