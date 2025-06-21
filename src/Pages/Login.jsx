@@ -68,7 +68,7 @@ export default function Login() {
         if (isAdmin){
           navigate('/admin/itemlist')
         } else {
-        navigate('/');
+        navigate('/cart');
         
         }
       } else if  (result.status == 405){
