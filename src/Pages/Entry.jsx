@@ -23,7 +23,7 @@ export default function Entry() {
                 // ✅ show animation then go to login
                 const timer = setTimeout(() => {
                     navigate('/');
-                }, 2000);
+                }, 1000);
                 return () => clearTimeout(timer);
             } else {
                 // ✅ not mobile → go to home even if not logged in
