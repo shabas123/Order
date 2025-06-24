@@ -35,7 +35,7 @@ export default function Entry() {
     return (
       <div>
 <img
-  src="https://kfcprodimages-ehcsdud6a5a5eqcm.z01.azurefd.net/cmsimages/kfc/imagestemp/ChickenMeals_En_211124.png"
+  src="https://s3.eu-central-1.amazonaws.com/uberall-userpics-prod/3486272/medium_l8qtMML18s.jpg"
   alt="Delivery"
   style={{ height: "100vh", width: "100vw",  }}
   loading="eager"
