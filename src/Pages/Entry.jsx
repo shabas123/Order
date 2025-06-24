@@ -34,8 +34,12 @@ export default function Entry() {
 
     return (
       <div>
-            {/* Only mobile will stay here for 4 seconds */}
-            <img src="https://thumbs.dreamstime.com/b/night-fast-food-delivery-service-mobile-hours-app-phone-180882104.jpg" style={{height:"100vh",width:"100%",objectFit:"cover"}} alt="" />
-        </div>
+<img
+  src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366/RX_THUMBNAIL/IMAGES/VENDOR/2024/12/9/17c8b37f-7eab-4678-a4a8-1794c66797f4_757194.JPG"
+  alt="Delivery"
+  style={{ height: "100vh", width: "100vw",  }}
+  loading="eager"
+  decoding="async"
+/></div>
     );
 }
