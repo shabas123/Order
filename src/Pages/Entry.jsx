@@ -35,7 +35,7 @@ export default function Entry() {
     return (
       <div>
 <img
-  src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_366/RX_THUMBNAIL/IMAGES/VENDOR/2024/12/9/17c8b37f-7eab-4678-a4a8-1794c66797f4_757194.JPG"
+  src="https://s3.eu-central-1.amazonaws.com/uberall-userpics-prod/3486272/medium_l8qtMML18s.jpg"
   alt="Delivery"
   style={{ height: "100vh", width: "100vw",  }}
   loading="eager"
