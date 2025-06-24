@@ -35,7 +35,7 @@ export default function Entry() {
     return (
     <div>
             {/* Only mobile will stay here for 4 seconds */}
-            <img src="https://thumbs.dreamstime.com/b/night-fast-food-delivery-service-mobile-hours-app-phone-180882104.jpg" style={{borderRadius:"60px",width:"100%"}} alt="" />
+            <img src="https://thumbs.dreamstime.com/b/night-fast-food-delivery-service-mobile-hours-app-phone-180882104.jpg" style={{height:"100vh",width:"100vw"}} alt="" />
         </div>
     );
 }
