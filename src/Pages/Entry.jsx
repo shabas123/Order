@@ -33,9 +33,9 @@ export default function Entry() {
     }, [loggedInUser, navigate]);
 
     return (
-    <div>
+      <div>
             {/* Only mobile will stay here for 4 seconds */}
-            <img src="https://thumbs.dreamstime.com/b/night-fast-food-delivery-service-mobile-hours-app-phone-180882104.jpg" style={{height:"100vh",width:"100vw"}} alt="" />
+            <img src="https://thumbs.dreamstime.com/b/night-fast-food-delivery-service-mobile-hours-app-phone-180882104.jpg" style={{height:"100vh",width:"100%",objectFit:"cover"}} alt="" />
         </div>
     );
 }
