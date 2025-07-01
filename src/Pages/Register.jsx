@@ -97,7 +97,7 @@ export default function Register({ register }) {
           <div className="col-md-1"></div>
           <div className="col-md-6">
             <img src="https://static.vecteezy.com/system/resources/previews/025/002/359/original/cute-cartoon-female-chef-character-on-transparent-background-generative-ai-png.png" alt="" className="img-fluid rounded"
-              style={{ maxHeight: '70vh', objectFit: 'cover' }} />
+              style={{ maxHeight: '60vh', objectFit: 'cover' }} />
           </div>
         </div>
       </div>
