@@ -21,12 +21,13 @@ function App() {
   }, []);
 
  
-  const isEntryPage = location.pathname === "/entry";
+
+  const noHeaderRoutes = ["/entry", "/login", "/register"];
+  const hideHeader = noHeaderRoutes.includes(location.pathname);
 
   return (
     <>
-     
-      {!isEntryPage && <Header user={user} />}
+      {!hideHeader && <Header user={user} />}
 
       <Routes>
         <Route path="/entry" element={<Entry />} />
