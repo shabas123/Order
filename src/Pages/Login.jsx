@@ -80,7 +80,7 @@ export default function Login() {
   
   return (
     <>
- <div className="container-fluid mt-4 >
+ <div className="container-fluid " style={{marginTop:"50px"}} >
         <div className="row align-items-center">
           <div className="col-md-1"></div>
           <div className="col-md-4">
