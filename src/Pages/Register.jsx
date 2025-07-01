@@ -60,7 +60,7 @@ export default function Register({ register }) {
       <div className='bg'>
 
 
-        <div className="container mt-4" >
+        <div className="container mt-2" >
           <div className="row mt-4">
             <div className="col-md-4"></div>
             <div className="col-md-6 border-white rounded  mt-4">
