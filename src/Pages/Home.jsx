@@ -1,5 +1,3 @@
-
-
 import React, { useEffect } from 'react'
 import Item from '../Components/Item'
 import { useSelector, useDispatch } from 'react-redux';
@@ -119,4 +117,4 @@ export default function Home() {
       />
     </>
   );
-        }
+                                                                                        }
