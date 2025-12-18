@@ -56,9 +56,7 @@ export default function Home() {
       </div>
 
      
-   <h2 className='text-center'>Our Menu</h2>
-      <h4 className='text-center'>Where Every Bite Hits the Spot</h4>   
-      <a href="#section1">
+     <a href="#section1">
         <div className='row bg'>
 
         <div className='posters'>
@@ -118,3 +116,4 @@ export default function Home() {
     </>
   );
     }
+
