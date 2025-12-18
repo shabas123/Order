@@ -32,12 +32,12 @@ export default function Home() {
      <div className="container-fluid d-flex align-items-center justify-content-center bg">
         <div className="row align-items-center" style={{textAlign:"center"}}>
                     <div className="col-md-6 " style={{ padding: "30px" }}>
-            {loggedInUser ? <h2 className="fw-bold text-success " > Welcome {loggedInUser} </h2>
-              :
+             <h2 className="fw-bold text-success " > Welcome {loggedInUser} </h2>
+            
               <Link to={"/"} style={{ textDecoration: "none", fontFamily: "fantasy" }} ><h2></h2></Link>
               <Link to={"/entry"} style={{ textDecoration: "none", fontFamily: "fantasy" }} ><h2></h2></Link>
 
-            }
+            
             <div><h1 className="fw-bold text-danger">Delicious food <br />always <span style={{ fontFamily: 'fantasy' }}>tells a story</span> </h1>
              <h4 className="mt-3  fw-bold" style={{ color: "red" , textAlign:"center" }}>
                Welcome to our restaurant, where every dish is crafted with passion and precision. Enjoy a culinary adventure filled with mouth-watering flavors and unforgettable moments.
@@ -119,4 +119,5 @@ export default function Home() {
     </>
   );
     }
+
 
