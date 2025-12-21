@@ -68,7 +68,7 @@ export default function Login() {
         if (isAdmin){
           navigate('/admin/itemlist')
         } else {
-        navigate('/cart');
+        navigate('/');
         
         }
       } else if  (result.status == 405){
@@ -90,6 +90,10 @@ export default function Login() {
             </div>
             <button onClick={handleLogin} type='button' className='btn btn-danger w-100 rounded-pill py-2 fw-bold shadow'>Login</button>
             <a href="./register" style={{ textDecoration: 'none' }}> <h6 className=' text-center  text-primary  mt-2 fw-bold'> <span className='text-white'>Don't have an account?</span> Sign up</h6></a>
+            <div class="text-white fw-bold text-center ">Admin Screen: admin@gmail.com <br />
+                 password:admin123
+            </div>
+
           </div>
           <div className="col-md-1"></div>
           <div className="col-md-6">
@@ -119,3 +123,4 @@ export default function Login() {
     </>
   )
 }
+
